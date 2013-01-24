@@ -1,0 +1,28 @@
+HOST: http://www.google.com/
+
+--- GreekAndroid ---
+---
+Welcome to the GreekAndroid API documentation. All comments can be written in
+(support [Markdown](http://greekandroid.webs.com) syntax)
+---
+--
+Application Resources
+The following is a section of resources related to the Aplication Resources
+--
+List products added into your shopping-cart. (comment block again in Markdown)
+GET /Application-Resources
+< 200
+< Content-Type: application/json
+{ "items": [
+  { "url": "/shopping-cart/1", "product":"2ZY48XPZ", "quantity": 1, "name": "New socks", "price": 1.25 }
+] }
+
+
+Save new products in your shopping cart
+POST /Git-Commits
+> Content-Type: application/json
+{ "product":"1AB23ORM", "quantity": 2 }
+< 201
+< Content-Type: application/json
+{ "status": "created", "url": "/shopping-cart/2" }
+
